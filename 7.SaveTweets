@@ -15,10 +15,10 @@ import twitter4j._
 object SaveTweets extends App {
   
   // configure twitter credentials 
-  System.setProperty("twitter4j.oauth.consumerKey", "9o6bMytdK03TezQ3H8x83UklJ")
-  System.setProperty("twitter4j.oauth.consumerSecret", "1dFuzX9lF9mbUoJYc6gwC9pjTDY0s3dG2tq9veLaSHkzIWClX3")
-  System.setProperty("twitter4j.oauth.accessToken", "913410683135434753-yp8Bzpil1P7vWcf1MrdllgkF1fFiwWm")
-  System.setProperty("twitter4j.oauth.accessTokenSecret", "EBfYdCzBjnMXsVLFCIGAd4djoYNMWTFovUUnAS6ZdWxOy")
+  System.setProperty("twitter4j.oauth.consumerKey", "9o6bMytdK03TezQ3H")
+  System.setProperty("twitter4j.oauth.consumerSecret", "")
+  System.setProperty("twitter4j.oauth.accessToken", "-yp8Bzpil1P7vWcf1Mr")
+  System.setProperty("twitter4j.oauth.accessTokenSecret", "")
 
   val conf = new SparkConf().setAppName("Save Tweets").setMaster("local[2]")
   val ssc = new StreamingContext(conf,Seconds(1))  // Seconds(1) - batch size of 1 
